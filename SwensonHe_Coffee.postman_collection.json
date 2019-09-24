@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "00b60604-ef4a-4416-83ac-cc3d0393141d",
+		"name": "SwensonHe_Coffee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all large coffee machines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffeemachines?type=large",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffeemachines"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "large"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all large coffee pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffeepods?type=large",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffeepods"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "large"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET expresso vanilla coffee pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffeepods?type=expresso&flavor=vanilla",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffeepods"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "expresso"
+						},
+						{
+							"key": "flavor",
+							"value": "vanilla"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET expresso machines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffeemachines?type=expresso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffeemachines"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "expresso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all small pods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffeepods?type=small",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffeepods"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "small"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all pods sold 7 dozen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/coffeepods?dozen=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coffeepods"
+					],
+					"query": [
+						{
+							"key": "dozen",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
