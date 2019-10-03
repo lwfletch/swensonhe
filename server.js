@@ -13,13 +13,13 @@ app.get('/coffeemachines', controller.getCoffeeMachines)
 
 app.get('/coffeepods', controller.getCoffeePods);
 
-let server = app.listen(3000, function () {
-   let port = server.address().port
-   console.log("Listening at port %s", port)
-})
 mongoose.set('useFindAndModify', false);
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true, poolSize: 5}).then(() => {
    console.log("Connected to Database");
+   let server = app.listen(3000, function () {
+      let port = server.address().port
+      console.log("Listening at port %s", port)
+   })
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);
 });
